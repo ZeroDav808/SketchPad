@@ -1,12 +1,21 @@
 body {
     background-color: blanchedalmond;
-}
-
-.main-container {
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main-container {
+    width: 500px;
+    height: 500px; /* Fixed size */
+    display: flex;
+    flex-wrap: wrap; /* Allows squares to wrap to the next line */
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white; /* Optional background for visibility */
+    border: 2px solid black; /* Optional border */
 }
 
 .main-container > * {
